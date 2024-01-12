@@ -9,13 +9,29 @@
     <title>World Clock Project</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <select id="city">
-      <option value="" checked>Select a city</option>
-      <option value="Europe/Paris">Paris 🇵🇾</option>
-      <option value="Australia/Sydney">Sydney 🇦🇺</option>
-      <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
-    </select>
+    <div class="container">
+      <h1>World Clock</h1>
+
+      <select id="">
+        <option value="" checked>Select a city...</option>
+        <option value="America/Las_Angeles">Las Angeles</option>
+        <option value="Australia/Sydney">Sydnet</option>
+        <option value="Europe/Paris">Paris>/option></option>
+        <option value="Asia/Tokyo">Tokyo>/option></option>
+      </select>
+
+      <div class="city">
+        <h2>Las Angeles 🇺🇸</h2>
+        <div class="date">January 12, 2024</div>
+        <div class="time">5:10 PM</div>
+      </div>
+
+      <div class="city">
+        <h2>Sydney 🇦🇺</h2>
+        <div class="date">January 12, 2024</div>
+        <div class="time">5:10 PM</div>
+      </div>
+    </div>
 
     <script>
       function showDate(event) {
