@@ -14,7 +14,7 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select id="">
+      <select id="city">
         <option value="" checked>Select a city...</option>
         <option value="America/Los_Angeles">Los Angeles</option>
         <option value="Australia/Sydney">Sydney</option>
@@ -22,6 +22,7 @@
         <option value="Asia/Tokyo">Tokyo</option>
       </select>
 
+      <div id="cities">
       <div class="city" id="los-angeles">
         <div>
           <h2>Los Angeles 🇺🇸</h2>
@@ -32,9 +33,10 @@
       <div class="city" id="paris">
         <div>
           <h2>Paris 🇫🇷</h2>
-          <div class="date">January 12, 2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">5:10 <small>AM</small></div>
+        <div class="time"></div>
+      </div>
       </div>
     <script>
       function showDate(event) {
@@ -42,8 +44,6 @@
           let currentTime = moment()
             .tz(event.target.value)
             .format("dddd, MMMM D, YYYY h:mm A");
-
-          alert(`It is ${currentTime} in ${event.target.value}`);
         }
       }
 
